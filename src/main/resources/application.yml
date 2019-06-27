@@ -1,0 +1,13 @@
+server:
+  port: 3344
+  thymeleaf:
+    prefix: classpath:/templates/
+
+
+
+
+
+
+  # 这个是访问项目的前缀（server.servlet.context-path:）
+#  servlet:
+#    context-path: "/zsl"
