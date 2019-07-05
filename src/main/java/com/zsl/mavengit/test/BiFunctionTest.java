@@ -18,7 +18,12 @@ public class BiFunctionTest {
 
         System.out.println(test.compute4(2, 3, (value1, value2) -> value1 * value2, value3 -> value3 * 2));
 
+        System.out.println("----------------------------------");
 
+        Function<String, String> function = String::toUpperCase;
+        System.out.println(function.getClass().getInterfaces()[0]);
+
+        System.out.println("----------------------------------");
     }
 
     public int compute3(int a, int b, BiFunction<Integer, Integer, Integer> biFunction) {
